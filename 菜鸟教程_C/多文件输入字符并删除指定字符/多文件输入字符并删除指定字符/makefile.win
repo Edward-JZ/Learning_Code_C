@@ -1,0 +1,40 @@
+# Project: 多文件输入字符并删除指定字符
+# Makefile created by Red Panda C++ 2.7
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = 多文件输入字符并删除指定字符_private.res
+OBJ      = 04-2\ 多文件输入字符串并删除指定字符.o 04-3\ 多文件输入字符串并删除指定字符.o 04-1\ 多文件输入字符串并删除指定字符.o $(RES)
+LINKOBJ  = "04-2 多文件输入字符串并删除指定字符.o" "04-3 多文件输入字符串并删除指定字符.o" "04-1 多文件输入字符串并删除指定字符.o" $(RES)
+CLEANOBJ  =  "04-2 多文件输入字符串并删除指定字符.o" "04-3 多文件输入字符串并删除指定字符.o" "04-1 多文件输入字符串并删除指定字符.o" 多文件输入字符并删除指定字符_private.res 多文件输入字符并删除指定字符.exe
+LIBS     = 
+INCS     =  
+CXXINCS  =  
+BIN      = 多文件输入字符并删除指定字符.exe
+CXXFLAGS = $(CXXINCS)  -g3 -pipe -Wall -D__DEBUG__
+CFLAGS   = $(INCS)  -std=c99 -g3 -pipe -Wall -D__DEBUG__
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+04-2\ 多文件输入字符串并删除指定字符.o: 04-2\ 多文件输入字符串并删除指定字符.c
+	$(CC) -c "04-2 多文件输入字符串并删除指定字符.c" -o "04-2 多文件输入字符串并删除指定字符.o" $(CFLAGS) 
+
+04-3\ 多文件输入字符串并删除指定字符.o: 04-3\ 多文件输入字符串并删除指定字符.c
+	$(CC) -c "04-3 多文件输入字符串并删除指定字符.c" -o "04-3 多文件输入字符串并删除指定字符.o" $(CFLAGS) 
+
+04-1\ 多文件输入字符串并删除指定字符.o: 04-1\ 多文件输入字符串并删除指定字符.c
+	$(CC) -c "04-1 多文件输入字符串并删除指定字符.c" -o "04-1 多文件输入字符串并删除指定字符.o" $(CFLAGS) 
+
+多文件输入字符并删除指定字符_private.res: 多文件输入字符并删除指定字符_private.rc 
+	$(WINDRES) -i 多文件输入字符并删除指定字符_private.rc --input-format=rc -o 多文件输入字符并删除指定字符_private.res -O coff 
+

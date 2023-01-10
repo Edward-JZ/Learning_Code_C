@@ -1,0 +1,32 @@
+[
+    {
+        "caretX": 2,
+        "caretY": 5,
+        "filename": "E:/04 Learning_Code/01 Learning_Code_C/Learning_Code_C/菜鸟教程_C/多文件输入字符并删除指定字符/多文件输入字符并删除指定字符/01-2 多文件输入字符串并删除指定字符.c",
+        "focused": true,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 2,
+        "caretY": 5,
+        "filename": "E:/04 Learning_Code/01 Learning_Code_C/Learning_Code_C/菜鸟教程_C/多文件输入字符并删除指定字符/多文件输入字符并删除指定字符/01-3 多文件输入字符串并删除指定字符.c",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 2,
+        "topLine": 1
+    },
+    {
+        "caretX": 11,
+        "caretY": 11,
+        "filename": "E:/04 Learning_Code/01 Learning_Code_C/Learning_Code_C/菜鸟教程_C/多文件输入字符并删除指定字符/多文件输入字符并删除指定字符/01-1 多文件输入字符串并删除指定字符.c",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 0,
+        "topLine": 1
+    }
+]
