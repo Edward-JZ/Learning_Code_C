@@ -1,4 +1,5 @@
-//求最小公倍数（Least Common Multiple），可以通过最大公约数或者遍历法来计算
+//求最小公倍数（Least Common Multiple），可以通过最大公约数法或者遍历法来计算
+//a x b = gcd(a, b) x lcm(a,b)
 #include<stdio.h>
 
 int LCM_1(int n1, int n2) {		//遍历法
@@ -11,15 +12,15 @@ int LCM_1(int n1, int n2) {		//遍历法
 	}
 	return multiple;
 }
-int LCD(int a, int b) {
+int GCD(int a, int b) {
 	if(a % b == 0){
 		return b;
 	}
-	return LCD(b, a%b);
+	return GCD(b, a%b);
 }
 int LCM_2(int n1, int n2) {		//最大公约数法计算
-	int lcd = LCD(n1, n2);
-	return n1 * n2 / lcd;		//最小公倍数 = 两数乘积 / 最大公约数
+	int gcd = GCD(n1, n2);
+	return n1 * n2 / gcd;		//最小公倍数 = 两数乘积 / 最大公约数
 }
 int main() {
 	int num1, num2;

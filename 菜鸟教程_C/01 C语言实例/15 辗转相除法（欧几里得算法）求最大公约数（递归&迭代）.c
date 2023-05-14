@@ -1,7 +1,6 @@
 //辗转相除法（欧几里得算法）求最大公约数，含递归与非递归版本
-//两个整数的最大公约数等于其中较小的那个数和两数相除余数的最大公约数
-//最大公约数（Greatest Common Divisor）缩写为GCD
-//以除数和余数反复做除法运算，当余数为 0 时，取当前算式除数为最大公约数
+//两数最大公约数，即除数与余数的最大公约数，余数为0时的除数，即两数的最大公约数
+//最大公约数(Greatest Common Divisor),GCD，或者(Highest Common Factor),HCF
 #include<stdio.h>
 int GCD(int, int);				//迭代法，循环的过程中不断优化过程
 int MaxCommonFactor(int, int);	//递归法，其实就是用递归函数的方式，代替了循环
